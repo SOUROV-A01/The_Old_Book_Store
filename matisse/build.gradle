@@ -18,7 +18,6 @@ apply plugin: 'checkstyle'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion '29.0.2'
 
     defaultConfig {
         minSdkVersion 14
@@ -28,7 +27,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    lintOptions {
+    namespace 'com.zhihu.matisse'
+    lint {
         abortOnError false
     }
 }
